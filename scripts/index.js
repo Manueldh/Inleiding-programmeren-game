@@ -3,7 +3,7 @@ const ogre = document.getElementById("ogre")
 const snelheid = 100
 
 function idleAan() {
-    character.style.backgroundImage = "url(../images/idle.gif)"
+    character.style.backgroundImage = "url(./images/idle.gif)"
 }
 
 function outOfScreen() {
