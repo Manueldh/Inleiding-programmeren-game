@@ -11,7 +11,7 @@ function preLoader() {
 }
 
 function play() {
-    audio = new Audio('../audio/thunderstruck-acdc.mp3')
+    audio = new Audio('./audio/thunderstruck-acdc.mp3')
     audio.play();
     // audio.addEventListener('timeupdate', thunderEffect)
 }
