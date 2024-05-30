@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background-index {
+    overflow: hidden;
+    background-image: url(../images/grass_bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#character {
+    background-image: url(../images/idle.gif);
+    background-size: 120%;
+    width: 100px;
+    height: 100px;
+}
+
+#ogre {
+    background-image: url(../images/ogre_running.gif);
+    background-size: 120%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.battle-main {
+    background-image: url(../images/battle-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#battle-character {
+    background-image: url(../images/idle.gif);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+#battle-ogre {
+    background-image: url(../images/ogre_idle.gif);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    transform: scaleX(-1);
+}
+
+.characters {
+    display: flex;
+    flex-direction: row;
+}
+
+.controls {
+    padding: 50px;
+}
+
+.controls button {
+    padding: 40px 80px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+#toggle-music {
+    padding: 15px 30px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* https://stackoverflow.com/questions/4847996/css-animation-onclick */
+.movementAnimation {
+    -webkit-animation-name: movementAnimation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes movementAnimation {
+    0% {
+        -webkit-transform: translateX(0px)
+    }
+
+    50% {
+        -webkit-transform: translateX(300px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
+
+/* eind stackoferflow */
+
+#game-won {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}

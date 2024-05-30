@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/preloader.js"></script>
+</head>
+
+<body>
+    <div class="preloader">
+        <h1>Get Ready To Fight!</h1>
+    </div>
+    <div id="game-won">
+        <h1>Congratulations you won!</h1>
+        <button id="restart-button">Restart</button>
+    </div>
+
+    <main class="battle-main">
+        <div class="healthpoints">
+            <div class="ogrehealthpoints">
+                <h2 id="ogre-health">Ogre Healthpoints: 500</h2>
+            </div>
+        </div>
+        <div class="characters">
+            <div id="battle-character"></div>
+            <div id="battle-ogre"></div>
+        </div>
+        <div class="controls">
+            <button id="move-kick">Kick</button>
+            <button id="move-slash">Slash</button>
+            <button id="move-punch">Punch</button>
+        </div>
+
+        <button id="toggle-music">
+            Pause Battle Music
+        </button>
+    </main>
+    <script src="./scripts/battlescreen.js"></script>
+</body>
+
+</html>
