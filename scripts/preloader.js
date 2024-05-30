@@ -1,7 +1,7 @@
 let audio;
 
 window.onload = function laadFunctie() {
-    setTimeout(preLoader, 400) // moet naar 4000
+    setTimeout(preLoader, 4000) // moet naar 4000
     play()
     muziekKnop()
 };
