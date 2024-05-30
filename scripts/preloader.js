@@ -22,7 +22,6 @@ function muziekKnop() {
         if (audio.paused) {
             audio.play()
             toggleMusicButton.textContent = "Pause Battle Music"
-            console.log(audio.currentTime)
         } else {
             audio.pause()
             toggleMusicButton.textContent = "Play Battle Music"

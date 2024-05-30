@@ -42,6 +42,7 @@ window.addEventListener('load', function laadSpelPosities() {
     ogre.style.top = 300 + 'px'
 })
 
+// Bewegen van karakter
 window.addEventListener('keyup', function (event) {
     switch (event.key) {
         case 'ArrowLeft':
