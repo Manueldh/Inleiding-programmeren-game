@@ -47,7 +47,7 @@ window.addEventListener('keyup', function (event) {
         case 'ArrowLeft':
             character.style.left = parseInt(character.style.left) - snelheid + 'px'
             character.style.transform = 'scaleX(-1)'
-            character.style.backgroundImage = "url(../images/running.gif)"
+            character.style.backgroundImage = "url(./images/running.gif)"
             outOfScreen()
             onCollide()
             setTimeout(idleAan, 1800)
@@ -55,21 +55,21 @@ window.addEventListener('keyup', function (event) {
         case 'ArrowRight':
             character.style.left = parseInt(character.style.left) + snelheid + 'px'
             character.style.transform = 'scaleX(1)'
-            character.style.backgroundImage = "url(../images/running.gif)"
+            character.style.backgroundImage = "url(./images/running.gif)"
             outOfScreen()
             onCollide()
             setTimeout(idleAan, 1800)
             break;
         case 'ArrowUp':
             character.style.top = parseInt(character.style.top) - snelheid + 'px'
-            character.style.backgroundImage = "url(../images/running.gif)"
+            character.style.backgroundImage = "url(./images/running.gif)"
             outOfScreen()
             onCollide()
             setTimeout(idleAan, 1800)
             break;
         case 'ArrowDown':
             character.style.top = parseInt(character.style.top) + snelheid + 'px'
-            character.style.backgroundImage = "url(../images/running.gif)"
+            character.style.backgroundImage = "url(./images/running.gif)"
             outOfScreen()
             onCollide()
             setTimeout(idleAan, 1800)
