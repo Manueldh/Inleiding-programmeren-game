@@ -12,7 +12,7 @@
 }
 
 #character {
-    background-image: url(../images/idle.gif);
+    background-image: url(./images/idle.gif);
     background-size: 120%;
     width: 100px;
     height: 100px;
